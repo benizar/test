@@ -1,28 +1,21 @@
-# README #
+# LLEGIU-ME
 A test repository for publishing my first web page.
 
-### What is this repository for? ###
+## Tema i motivació
+Explica l’objectiu de la web i la motivació per fer-la. Vinculació amb Geografia.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+## Dades i continguts
+D’on s’han tret les dades, text, fotos, etc
 
-### How do I get set up? ###
+## Estructura de la Web. 
+Seccions, decisions preses en la presentació dels apartats, s’han utilitzat els elements adequats per representar la informació (taules, diagrames, etc)
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+## Web responsive
+Explica cóm ha fet (alguna tècnica) per a que la seva web s’adapti a diferents dispositius. Resolució de les imatges, etc
 
-### Contribution guidelines ###
+## Cartografia
+Cóm s’han integrat i elaborat els mapes que apareixen a la web.
 
-* Writing tests
-* Code review
-* Other guidelines
+## Dificultats/millores
+Reflexiona proactivament sobre el producte elaborat.
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
