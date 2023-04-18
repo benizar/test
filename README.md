@@ -7,7 +7,7 @@ Explica **l’objectiu** de la web i la motivació per fer-la. Vinculació amb G
 ## Dades i continguts
 
 Una imatge d'exemple:
-![Un dia al campus de la FTG](imatge-de-prova.jpg "Un dia al campus de la FTG").
+![Un dia al campus de la FTG](./images/imatge-de-prova.jpg "Un dia al campus de la FTG").
 
 D’on s’han tret:
 
