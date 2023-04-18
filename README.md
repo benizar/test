@@ -6,7 +6,8 @@ Explica **l’objectiu** de la web i la motivació per fer-la. Vinculació amb G
 
 ## Dades i continguts
 
-Una imatge d'exemple -> ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1").
+Una imatge d'exemple:
+![Un dia al campus de la FTG](imatge-de-prova.jpg "Un dia al campus de la FTG").
 
 D’on s’han tret:
 
