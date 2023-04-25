@@ -8,8 +8,6 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="stylesheet" href="css/leaflet.css">
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="css/MarkerCluster.css">
-        <link rel="stylesheet" href="css/MarkerCluster.Default.css">
         <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
         <style>
         #map {
@@ -32,12 +30,11 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
-        <script src="js/leaflet.markercluster.js"></script>
-        <script src="data/ftg_point_1.js"></script>
+        <script src="data/Despatxn1_1.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:10
-        }).fitBounds([[41.101643772003406,1.1462798307711783],[41.10347331646252,1.1492186265952733]]);
+        }).fitBounds([[41.101770543587975,1.1462891945814027],[41.10360008804709,1.1492279904054976]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -57,13 +54,15 @@
         });
         layer_GoogleSatelliteHybrid_0;
         map.addLayer(layer_GoogleSatelliteHybrid_0);
-        function pop_ftg_point_1(feature, layer) {
+        function pop_Despatxn1_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(feature.properties['fid'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">fid</th>\
+                        <td>' + (feature.properties['fid'] !== null ? autolinker.link(feature.properties['fid'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>id</strong><br />' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">id</th>\
+                        <td>' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">label</th>\
@@ -73,46 +72,38 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_ftg_point_1_0() {
+        function style_Despatxn1_1_0() {
             return {
-                pane: 'pane_ftg_point_1',
-                radius: 8.0,
-                opacity: 1,
-                color: 'rgba(128,17,25,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 2.0,
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(219,30,42,1.0)',
+                pane: 'pane_Despatxn1_1',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/Kb_Airports_World.svg',
+            iconSize: [91.19999999999999, 91.19999999999999]
+        }),
                 interactive: true,
             }
         }
-        map.createPane('pane_ftg_point_1');
-        map.getPane('pane_ftg_point_1').style.zIndex = 401;
-        map.getPane('pane_ftg_point_1').style['mix-blend-mode'] = 'normal';
-        var layer_ftg_point_1 = new L.geoJson(json_ftg_point_1, {
+        map.createPane('pane_Despatxn1_1');
+        map.getPane('pane_Despatxn1_1').style.zIndex = 401;
+        map.getPane('pane_Despatxn1_1').style['mix-blend-mode'] = 'normal';
+        var layer_Despatxn1_1 = new L.geoJson(json_Despatxn1_1, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_ftg_point_1',
-            layerName: 'layer_ftg_point_1',
-            pane: 'pane_ftg_point_1',
-            onEachFeature: pop_ftg_point_1,
+            dataVar: 'json_Despatxn1_1',
+            layerName: 'layer_Despatxn1_1',
+            pane: 'pane_Despatxn1_1',
+            onEachFeature: pop_Despatxn1_1,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_ftg_point_1_0(feature));
+                return L.marker(latlng, style_Despatxn1_1_0(feature));
             },
         });
-        var cluster_ftg_point_1 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_ftg_point_1.addLayer(layer_ftg_point_1);
-
-        bounds_group.addLayer(layer_ftg_point_1);
-        cluster_ftg_point_1.addTo(map);
+        bounds_group.addLayer(layer_Despatxn1_1);
+        map.addLayer(layer_Despatxn1_1);
             var title = new L.Control();
             title.onAdd = function (map) {
                 this._div = L.DomUtil.create('div', 'info');
@@ -149,7 +140,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/ftg_point_1.png" /> ftg_point': cluster_ftg_point_1,"Google Satellite Hybrid": layer_GoogleSatelliteHybrid_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/Despatxn1_1.png" /> Despatx nº1': layer_Despatxn1_1,"Google Satellite Hybrid": layer_GoogleSatelliteHybrid_0,}).addTo(map);
         setBounds();
         </script>
     </body>

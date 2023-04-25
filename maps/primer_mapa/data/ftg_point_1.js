@@ -1,1 +1,0 @@
-var json_ftg_point_1 = {"type":"FeatureCollection","name":"ftg_point_1","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"fid":"1","id":"Despatx nº1","label":"Despatx de Benito i Xavi"},"geometry":{"type":"Point","coordinates":[1.148038233801014,41.102937739329626]}}]}
