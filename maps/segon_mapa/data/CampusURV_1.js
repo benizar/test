@@ -1,0 +1,1 @@
+var json_CampusURV_1 = {"type":"FeatureCollection","name":"CampusURV_1","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"fid":"1","name":"Facultat de Turisme i Geografia"},"geometry":{"type":"Point","coordinates":[1.147812698988202,41.102706457733198]}}]}
